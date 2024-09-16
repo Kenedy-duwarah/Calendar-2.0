@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Calendar </title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gray-100 flex justify-center items-center h-screen">
+
+    <!-- Calendar Container -->
+    <div class="datepicker p-6 rounded-lg shadow-lg w-full max-w-md">
+        <div class="flex justify-between items-center mb-4">
+            <button id="prev" class="arrow">&lt;</button>
+            <div class="text-center">
+                <h2 id="month" class="month-name text-xl font-bold"></h2>
+                <p id="year" class="text-md"></p>
+            </div>
+            <button id="next" class="arrow">&gt;</button>
+        </div>
+
+        <!-- Calendar Grid -->
+        <div class="week">
+            <!-- Weekdays -->
+            <div class="day font-bold">Sun</div>
+            <div class="day font-bold">Mon</div>
+            <div class="day font-bold">Tue</div>
+            <div class="day font-bold">Wed</div>
+            <div class="day font-bold">Thu</div>
+            <div class="day font-bold">Fri</div>
+            <div class="day font-bold">Sat</div>
+        </div>
+
+        <!-- Dates will be dynamically loaded here -->
+        <div id="calendar-dates" class="datepicker-calendar"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
